@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.philippe.seg3125test.AlgebraQuizActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbars">
+    </include>
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/main_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1"
+        android:id="@+id/textView9"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/main_toolbar"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find the value of x in the following function:"
+        android:id="@+id/textView10"
+        android:textSize="15dp"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="9x - 12 = 3x"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 2"
+        android:id="@+id/textView14"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/q1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find the value of x in the following function:"
+        android:id="@+id/textView15"
+        android:textSize="15dp"
+        android:layout_below="@+id/textView14"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="8x - 12 = 15x - 4x"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView15"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 3"
+        android:id="@+id/textView18"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/q2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find the value of x in the following function:"
+        android:id="@+id/textView19"
+        android:textSize="15dp"
+        android:layout_below="@+id/textView18"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="11 + 6x = 2x - 13"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/textView19"
+        android:layout_alignStart="@+id/textView16" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/quiz_submit"
+        android:onClick="calcResult"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/q2"
+       android:layout_marginLeft="48dp"
+       android:orientation="horizontal"
+       android:layout_below="@+id/textView16"
+       android:layout_centerHorizontal="true">
+
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="x = -2"
+           android:id="@+id/q2_a1"
+           android:checked="false"
+           android:layout_below="@+id/textView16"
+           android:layout_alignEnd="@+id/textView18" />
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="x = -4"
+           android:id="@+id/q2_a2"
+           android:checked="false"
+           android:layout_below="@+id/textView16"
+           android:layout_alignStart="@+id/quiz_submit" />
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="x = 4"
+           android:id="@+id/q2_a3"
+           android:checked="false"
+           android:layout_below="@+id/textView16"
+           android:layout_toEndOf="@+id/textView20"
+           android:layout_gravity="right" />
+   </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/q3"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView20"
+        android:layout_alignEnd="@+id/q1">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x = 3"
+            android:id="@+id/q3_a1"
+            android:checked="false"
+            android:layout_below="@+id/textView20"
+            android:layout_alignEnd="@+id/textView18" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x = -7"
+            android:id="@+id/q3_a2"
+            android:checked="false"
+            android:layout_alignTop="@+id/q3_a1"
+            android:layout_centerHorizontal="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x = -6"
+            android:id="@+id/q3_a3"
+            android:checked="false"
+            android:layout_alignTop="@+id/q3_a2"
+            android:layout_toEndOf="@+id/textView20" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/q1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView12"
+        android:layout_alignStart="@+id/q2">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x = 6"
+            android:id="@+id/q1_a1"
+            android:checked="false"
+            android:layout_above="@+id/textView14"
+            android:layout_alignEnd="@+id/textView14"
+            android:layout_gravity="center_horizontal" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x = 1"
+            android:id="@+id/q1_a2"
+            android:checked="false"
+            android:layout_below="@+id/textView12"
+            android:layout_alignStart="@+id/q2_a2"
+            android:layout_gravity="center_horizontal" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x = -3"
+            android:id="@+id/q1_a3"
+            android:checked="false"
+            android:layout_below="@+id/textView12"
+            android:layout_alignEnd="@+id/q2_a3"
+            android:layout_gravity="right" />
+
+    </RadioGroup>
+</RelativeLayout>

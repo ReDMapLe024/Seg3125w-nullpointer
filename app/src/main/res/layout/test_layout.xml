@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="?android:attr/borderlessButtonStyle"
+    android:text="     Algebra"
+    android:drawableLeft="@drawable/algebra_logo"
+    android:id="@+id/button"
+    android:textAlignment="textStart"
+    android:paddingStart="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+

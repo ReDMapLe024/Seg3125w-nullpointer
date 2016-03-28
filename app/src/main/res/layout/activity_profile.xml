@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.philippe.seg3125test.ProfileActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbars">
+    </include>
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/profile_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_below="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/emailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Email"
+        android:layout_marginTop="-35dp"
+        android:layout_below="@id/profile_toolbar"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:id="@+id/profileImage"
+        android:layout_marginTop="-35dp"
+        android:layout_below="@+id/emailTV"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mathematics"
+        android:id="@+id/textViewMath"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="94dp"
+        android:layout_above="@+id/textViewEconomics"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Science"
+        android:id="@+id/textViewScience"
+        android:layout_marginEnd="74dp"
+        android:layout_alignTop="@+id/textViewMath"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Economics"
+        android:id="@+id/textViewEconomics"
+        android:layout_marginBottom="79dp"
+        android:layout_above="@+id/textViewComputers"
+        android:layout_alignStart="@+id/textViewMath"
+        android:layout_marginLeft="7dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Finance"
+        android:id="@+id/textViewFinance"
+        android:layout_alignBottom="@+id/textViewEconomics"
+        android:layout_alignEnd="@+id/textViewScience" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Computers"
+        android:id="@+id/textViewComputers"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignStart="@+id/textViewEconomics"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewFinance"
+        android:layout_marginBottom="86dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbar_math"
+        android:layout_below="@+id/textViewScience"
+        android:layout_alignStart="@+id/textViewMath"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="2dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbar_science"
+        android:indeterminate="false"
+        android:layout_marginEnd="55dp"
+        android:layout_alignTop="@+id/pbar_math"
+        android:layout_alignParentEnd="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbar_economics"
+        android:layout_below="@+id/textViewFinance"
+        android:layout_alignStart="@+id/textViewEconomics"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="-5dp"
+        android:indeterminate="false" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbar_finance"
+        android:layout_alignTop="@+id/pbar_economics"
+        android:layout_alignStart="@+id/textViewFinance"
+        android:layout_marginLeft="-17dp"
+        android:indeterminate="false" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbar_computers"
+        android:layout_below="@+id/textViewComputers"
+        android:layout_alignStart="@+id/textViewComputers"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="-5dp"
+        android:indeterminate="false" />
+
+</RelativeLayout>

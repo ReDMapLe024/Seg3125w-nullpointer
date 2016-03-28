@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar_main"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:minHeight="50dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:background="#f3f0f0"
+    android:visibility="visible"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetEnd="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="LEARN"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/button_learn"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Glossary"
+            android:id="@+id/button_glossary"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:id="@+id/button_profile"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_alignBottom="@+id/button_trigonometry"
+            android:layout_alignParentEnd="true"
+            android:background="?android:attr/selectableItemBackground" />
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
+

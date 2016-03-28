@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dip"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/quiz_button"
+        android:text="Quiz"
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/lblListItem"
+        android:layout_toRightOf="@+id/lecture_button" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lecture_button"
+        android:text="Lecture"
+        android:textSize="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/lblListItem" />
+
+</RelativeLayout>

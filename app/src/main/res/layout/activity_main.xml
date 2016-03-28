@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbars">
+    </include>
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/main_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Categories"
+        android:id="@+id/textView"
+        android:layout_below="@+id/main_toolbar"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_mathematics"
+        android:background="@drawable/math_button"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/button_economics" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_science"
+        android:background="@drawable/science_button"
+        android:layout_alignTop="@+id/button_mathematics"
+        android:layout_toEndOf="@+id/textView" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_economics"
+        android:background="@drawable/economy_button"
+        android:layout_below="@+id/button_mathematics"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginTop="57dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_finance"
+        android:background="@drawable/finance_button"
+        android:layout_alignTop="@+id/button_economics"
+        android:layout_alignStart="@+id/button_science" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_computers"
+        android:background="@drawable/computer_button"
+        android:layout_below="@+id/button_economics"
+        android:layout_alignStart="@+id/button_economics"
+        android:layout_marginTop="62dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mathematics"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/button_mathematics"
+        android:layout_alignStart="@+id/button_mathematics"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Science"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignEnd="@+id/button_science"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:layout_marginRight="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Economics"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/button_economics"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Finance"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignEnd="@+id/button_finance"
+        android:textStyle="bold"
+        android:layout_marginRight="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Computers"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/button_computers"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.philippe.seg3125test.GlossaryActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbars">
+    </include>
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/profile_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/toolbar" />
+
+    <SearchView
+        android:id="@+id/bar_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:queryHint="Search Terms.."
+        android:layout_below="@+id/profile_toolbar"
+        android:layout_marginTop="-20dp"/>
+
+
+    <ExpandableListView
+        android:id="@+id/result_list"
+        android:layout_width="match_parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:divider="@null"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar_search"></ExpandableListView>
+
+</RelativeLayout>
+
